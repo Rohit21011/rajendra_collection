@@ -4,16 +4,16 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { FolderPageRoutingModule } from './folder-routing.module';
+import { BuyerDetailsPageRoutingModule } from './buyer-details-routing.module';
 
-import { FolderPage } from './folder.page';
+import { BuyerDetailsPage } from './buyer-details.page';
 import { SharedModule } from '../shared-module/shared.module';
 
 @NgModule({
   imports: [
-    FolderPageRoutingModule,
-    SharedModule
+    SharedModule,
+    BuyerDetailsPageRoutingModule
   ],
-  declarations: [FolderPage]
+  declarations: [BuyerDetailsPage]
 })
-export class FolderPageModule {}
+export class BuyerDetailsPageModule {}
