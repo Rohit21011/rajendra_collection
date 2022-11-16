@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { NavController } from '@ionic/angular';
+import { BuyerDetailsPage } from '../buyer-details/buyer-details.page';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +10,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePage implements OnInit {
 
-  constructor() { }
+  constructor(public navCtrl: NavController) { }
 
   ngOnInit() {
   }
-
+  buyerDetails(){
+    this.navCtrl.navigateForward('buyer-details');
+ }
+ sellerDetails(){
+this.navCtrl.navigateForward('seller-details');
+ }
+ search(){
+this.navCtrl.navigateForward('search');
+ }
+ stocks(){
+this.navCtrl.navigateForward('stock');
+ }
+ sellReport(){
+this.navCtrl.navigateForward('sales-report');
+ }
 }

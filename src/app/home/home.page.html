@@ -69,31 +69,31 @@
     <ion-grid >
       <ion-row>
         <ion-col>
-              <ion-icon name="add-circle" class="icon"></ion-icon>
+              <ion-icon name="add-circle" class="icon" ></ion-icon>
               <br>
-            <ion-label>Buyer Datails</ion-label>
+            <ion-label (click)="buyerDetails()">Buyer Datails</ion-label>
         </ion-col>
         <ion-col>
           <ion-icon name="log-out" class="icon"></ion-icon>
               <br>
-            <ion-label>seller Datails</ion-label>
+            <ion-label (click)="sellerDetails()">seller Datails</ion-label>
         </ion-col>
         <ion-col>
           <ion-icon name="search" class="icon"></ion-icon>
           <br>
-        <ion-label>Search</ion-label>
+        <ion-label (click)="search()">Search</ion-label>
         </ion-col>
       </ion-row>
       <ion-row>
         <ion-col>
           <ion-icon name="basket" class="icon"></ion-icon>
           <br>
-        <ion-label>Stock</ion-label>
+        <ion-label (click)="stocks()">Stock</ion-label>
         </ion-col>
         <ion-col>
           <ion-icon name="bar-chart" class="icon"></ion-icon>
           <br>
-        <ion-label>Sell Report</ion-label>
+        <ion-label (click)="sellReport()">Sell Report</ion-label>
         </ion-col>
         <ion-col>
 
