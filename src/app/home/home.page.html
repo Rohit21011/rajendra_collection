@@ -1,12 +1,26 @@
-<app-header label="Home"></app-header>
+<app-header label="Home">
+  <!-- <ion-icon class="three-dot-menu" name="ellipsis-vertical-outline" ></ion-icon> -->
 
+</app-header>
+<ion-icon class="three-dot-menu" name="ellipsis-vertical-outline" id="popover-button"></ion-icon>
+
+<ion-popover trigger="popover-button" [dismissOnSelect]="true">
+  <ng-template>
+    <ion-content>
+      <ion-content class="ion-padding" (click)="changePassword()">Change Password</ion-content>
+      <ion-content class="ion-padding" (click)="changeSaleRportPassword()">Change Sales Report Password</ion-content>
+      <ion-content class="ion-padding" >Report local backup</ion-content>
+
+    </ion-content>
+  </ng-template>
+</ion-popover>
 <ion-content style="text-align:center">
-  <ion-grid>
+  <ion-grid style="margin-top: 10%;">
     <ion-row>
       <ion-col>
         <ion-card style="background:lightblue">
           <ion-card-header>
-            <ion-card-title>Stock</ion-card-title>
+            <ion-card-title class="text-color">Stock</ion-card-title>
           </ion-card-header>
 
           <ion-card-content >
@@ -18,7 +32,7 @@
       <ion-col>
         <ion-card style="background:  #d9ef97;">
           <ion-card-header>
-            <ion-card-title>Buy</ion-card-title>
+            <ion-card-title class="text-color">Buy</ion-card-title>
           </ion-card-header>
 
           <ion-card-content >
@@ -28,11 +42,11 @@
         </ion-card>
       </ion-col>
     </ion-row>
-    <ion-row>
+    <ion-row style="margin-top: 5%;">
       <ion-col>
         <ion-card style="background:lightgreen">
           <ion-card-header>
-            <ion-card-title>Profit</ion-card-title>
+            <ion-card-title class="text-color">Profit</ion-card-title>
           </ion-card-header>
 
           <ion-card-content >
@@ -44,7 +58,7 @@
       <ion-col>
         <ion-card style="background:#e96c6c">
           <ion-card-header>
-            <ion-card-title>Sell</ion-card-title>
+            <ion-card-title class="text-color">Sell</ion-card-title>
           </ion-card-header>
 
           <ion-card-content >
@@ -65,7 +79,7 @@
         </ion-select>
       </ion-item>
     </div>
-    <ion-card style="margin-top: 10%">
+    <ion-card style="margin-top: 12%">
     <ion-grid >
       <ion-row>
         <ion-col>
@@ -96,7 +110,9 @@
         <ion-label (click)="sellReport()">Sell Report</ion-label>
         </ion-col>
         <ion-col>
-
+          <ion-icon name="clipboard" class="icon"></ion-icon>
+          <br>
+        <ion-label (click)="sellReport()">Amount pending  </ion-label>
         </ion-col>
       </ion-row>
       </ion-grid>

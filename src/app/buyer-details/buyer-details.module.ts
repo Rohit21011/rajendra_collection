@@ -12,7 +12,7 @@ import { SharedModule } from '../shared-module/shared.module';
 @NgModule({
   imports: [
     SharedModule,
-    BuyerDetailsPageRoutingModule
+    BuyerDetailsPageRoutingModule,
   ],
   declarations: [BuyerDetailsPage]
 })

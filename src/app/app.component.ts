@@ -12,6 +12,7 @@ export class AppComponent {
     { title: 'Search Phone', url: '/search', icon: 'search' },
     { title: 'Sales Report', url: '/sales-report', icon: 'basket' },
     { title: 'Stock', url: '/stock', icon: 'bar-chart' },
+    { title: 'Logout', url: '/login', icon: 'log-out' },
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
   constructor() {}

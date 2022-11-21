@@ -4,9 +4,21 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="home"></ion-back-button>
     </ion-buttons>
-    <ion-title>seller detailes</ion-title>
+    <ion-title>Search Phone for Sell</ion-title>
   </ion-toolbar>
 </ion-header>
 <ion-content>
-
+  <ion-item>
+    <ion-label position="floating">IMEI-1</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Mobile number</ion-label>
+    <ion-input type="number"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Model number</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <ion-button (click)="search()" expand="block" shape="round">Search</ion-button>
 </ion-content>

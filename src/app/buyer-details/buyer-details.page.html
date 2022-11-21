@@ -13,7 +13,7 @@
 
     <ion-item>
       <ion-label position="floating">Model number</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-input type="number"></ion-input>
     </ion-item>
 
     <ion-item>
@@ -39,13 +39,13 @@
 ></ion-datetime>
     </ng-template>
   </ion-popover> -->
-      <ion-datetime-button datetime="bill_datetime"></ion-datetime-button>
+      <ion-datetime-button    datetime="bill_datetime"></ion-datetime-button>
       <ion-label>Bill Date</ion-label>
       <ion-modal [keepContentsMounted]="true">
 
         <ng-template>
 
-          <ion-datetime presentation="date" id="bill_datetime" color="success">
+          <ion-datetime  presentation="date" id="bill_datetime" color="success">
             <span slot="title">Select Bill Date</span>
           </ion-datetime>
 
@@ -58,7 +58,7 @@
     </ion-item>
     <ion-item>
       <ion-label position="floating">Used days</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-input type="number"></ion-input>
     </ion-item>
 
     <ion-item>
@@ -106,13 +106,42 @@
 
   <ion-item>
     <ion-label position="floating">Buying Price</ion-label>
-    <ion-input type="text"></ion-input>
+    <ion-input type="number"></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label position="floating">Buyer Aadhar Number</ion-label>
-    <ion-input type="text"></ion-input>
+    <ion-input type="number"></ion-input>
   </ion-item>
+  <ion-item>
+    <ion-label>Buyer Photo</ion-label>
+    <ion-input type="file" accept="image/*"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Bill Photo</ion-label>
+    <ion-input type="file" accept="image/*"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Mobile Photo</ion-label>
+    <ion-input type="file" accept="image/*"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Aadhar Photo</ion-label>
+    <ion-input type="file" accept="image/*"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>IMEI Photo</ion-label>
+    <ion-input type="file" accept="image/*"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Other Photo</ion-label>
+    <ion-input type="file" accept="image/*"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Bill PDF</ion-label>
+    <ion-input type="file" accept=".pdf"></ion-input>
+  </ion-item>
+  <ion-button expand="block">Save</ion-button>
   </ion-list>
 
 

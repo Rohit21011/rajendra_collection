@@ -11,5 +11,7 @@ export class SearchPage implements OnInit {
 
   ngOnInit() {
   }
+search(){
 
+}
 }

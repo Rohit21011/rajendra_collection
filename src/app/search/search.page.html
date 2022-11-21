@@ -1,10 +1,4 @@
-<!-- <ion-header>
-  <ion-toolbar>
 
-
-
-  </ion-toolbar>
-</ion-header> -->
 <ion-header>
   <ion-toolbar>
 
@@ -16,5 +10,22 @@
 </ion-header>
 
 <ion-content>
+  <ion-item>
+    <ion-label position="floating">IMEI-1</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Purchase Entry Mobile number</ion-label>
+    <ion-input type="number"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Sale  Entry Mobile number</ion-label>
+    <ion-input type="number"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Model</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <ion-button (click)="search()" expand="block" shape="round">Search</ion-button>
 
 </ion-content>

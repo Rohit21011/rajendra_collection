@@ -17,16 +17,28 @@ export class HomePage implements OnInit {
   buyerDetails(){
     this.navCtrl.navigateForward('buyer-details');
  }
+
  sellerDetails(){
 this.navCtrl.navigateForward('seller-details');
  }
+
  search(){
 this.navCtrl.navigateForward('search');
  }
+
  stocks(){
 this.navCtrl.navigateForward('stock');
  }
+
  sellReport(){
 this.navCtrl.navigateForward('sales-report');
+ }
+
+ changePassword(){
+  this.navCtrl.navigateForward('change-password');
+ }
+
+ changeSaleRportPassword(){
+  this.navCtrl.navigateForward('change-sales-password');
  }
 }
